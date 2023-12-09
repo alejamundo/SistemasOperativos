@@ -1,0 +1,123 @@
+marco SCRUM: es iteratiovo e incremental
+
+Compuesto de Roles--Artefactos -- Eventos
+----------------Roles--------------------
+*Propietario del producto
+*Equipo desarrollo
+*Scrumn master
+*Interesados: usuarios comerciales
+
+------------------Artefactos------------
+*Pilas de producto
+*Pila del sprint
+*Incrementos
+
+-------------------Eventos--------------
+*Se planean los hitos
+*Planificacion sprint
+*Scrum diario 
+*Revision sprint
+
+Ciclo se repite------------>>>>>>>>>
+Planificacion Sprint--Realiza tareas de la pila sprint--presenta incremento (repite una y otra vez)..
+*********************************************************************************************************
+
+Historia de usuario: breve explicación de una caracteristica o funcionalidad desde el punto de vista
+del usuario (unidad pequeña de trabajo que conduce a una funcionalidad completa del usuario)
+	*se usa para identificar los requisitos de mas alto nivel
+	*es tambien un proceso de descubriemiento de requisitos y no de analisis
+
+---------------Como se escriben-----------------
+	ID: (identificador)* de la historia
+	Rol: rol q (desempeña)* el usuario cuando realiza la funcionalidad q se esta describiendo.
+		Ejemplo: Yo como cliente
+			 Desempeñañdo el rol de cliente registrado
+			 como un cliente registrado
+	Descripción: funcion que el rol necesita (hacer)* en el sistema
+		Ejemplo: Necesito realizar busqueda de productos por catalogo
+			Puedo seleccionar una categoria para ver el nnúmero de productos que tiene
+	Criterio aceptación: es lo que el necesita (lograr)* al ejecutar la accion
+	Prioridad: determina el (orden)* en el que la historia debe ser implementada
+	Sprint: útil para la (organización)* del propietario del proyecto
+
+	Ejemplo:
+		ID: 1
+		Nombre: Registrar usuario administrador
+		Prioridad: alta
+		Rol: Yo como usuario root
+		Funcionalidad: necesito crear un usuario administrador
+		Criterio aceptación: El usuario debe proporcionar emain
+				     El usuario debe proporcionar contraseña
+**************************************************************************************************
+Conceptos a tener encuenta en el desarollo de software
+
+	Apliclativo web: Código interpretado por el navegador
+	Ingenieria de software: aplicacion de un enfoque sistematico y disciplinado integra(math, ciencias)
+	Diseño del software: proceso de diseño para la planificación de una solucion de software
+	Requerimentos de software: expresan necesidades y restricciones de un producto (Obtencion, analisis especificacion y validación)
+	UML: Leguaje grafico para visualizar un sistema (Plano)
+
+Equipos de desarrollo de software
+	
+	Analista de sofware: entiende necesidades y asegura que la solución se ajusta a las necesidades
+	Arquitecto de software: traducir requisitos en una solución tecnica
+	Desarrollo backend: trabaja la arquitectura interna de una web
+	Desarrollo frontend: Realiza código para que la interfaz sea atractiva
+	Tester: realiza pruebas de software
+
+
+	TCP: hace seguimiento de segmentos
+	IP: se encarga de entregar datos
+
+	Cookies: Gestionan sesiones, Sirvern para dar perosonalización, Rastreos de usuarios
+	Memoria cache: permite reutilizar datos recuperados o procesados anteriormente
+
+**************************************************************************************************
+Modelo DRA (Desarrollo Rápido de Aplicaciones)
+	* no existen especificaciones del sistema detalladas
+	* se desarrolla en una serie de incrementos
+	* La interfaz se desarrolla con controles (beans)
+	* funciones secundarias eliminadas para cumplir el calendario
+
+Fases: 
+	*Modelo de gestión
+	*Modelo de datos
+	*Modelo de procesos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+una página donde el hotel quiere además de 
+*publicidad
+*se haga el registro de los visitantes
+
+*requiere un diseño de una base de datos que soporte los diferentes eventos publicitarios y reservaciones de las habitaciones. 
+
+	 Registro datos básicos del hotel: (Registros Hoteles)
+	un funcionario administrativo de la cadena de (Administrador)
+	hoteles ---- registrará en el sistema de información los datos del hotel, 
+		tales como:
+		código asignado al hotel, Nit, nombre del hotel, fecha de creación, 
+		nombre del representante legal, número telefónico de contacto.
+
+	 Registro datos básicos de las sucursales del hotel: el funcionario registrará por (Registros sucursales)
+	cada uno de los hoteles 
+		las diferentes sucursales que posee en cada ciudad, 
+		cada sucursal para identificarse utiliza el código asignado al hotel junto 					con el código asignado a cada sucursal
+		por cada sucursal se deben registrar los datos de la
+			dirección donde se encuentra ubicada
+			su número de teléfono
+			fecha de creación de la sucursal.
+		Por cada sucursal se debe almacenar el número de las habitaciones
+		con las que cuenta para la reservación, cada habitación está clasificada de 						acuerdo a cinco tipos ya establecidos (Tipos de habitaciones)
+			(sencilla, doble, ejecutiva, suite, presidencial) y asignar un 
+			valor correspondiente por cada día de alojamiento.
+
+	 Registro reservaciones: el cliente podrá realizar la reservación teniendo en cuenta (Cliente)
+		el hotel y la sucursal correspondiente
+		el tipo de habitación a elegir
+		la cantidad de días a hospedarse
+		si el cliente no se encuentra registrado en la base de datos de la página 		deberá 		registrarse diligenciando los datos básicos de identificación: 
+			 cédula de ciudadanía
+			 nombre, apellidos,
+			 género, edad, fecha de nacimiento, 
+			 correo electrónico y teléfono. Además, 
+		para poder acceder a la reserva deberá cancelar el (Anticipo)
+			valor equivalente al 30% del total de la reservación, 
+			de dicho pago se almacena la fecha de pago,
+			valor del pago y la forma de pago 
+				(ef = efectivo, tc = tarjeta de crédito, (Medio de pago)
+				td = tarjeta débito y tb = transferencia bancaria). 
+
+	 Check-In: el proceso de Check in se realiza cuando el cliente se dirige a la 	sucursal del hotel, se 	realiza la respectiva confirmación de los datos para la identificación del cliente en caso 	de haber 	realizado una reservación,en caso de que 	no haya realizado una reserva puede acceder al 			servicio registrando los datos (recepcionista) (reservaciones)
+	correspondientes de 
+		identificación, 
+		tipo de habitación 
+		días de alojamiento.
+
+	 Check-Out: el proceso de Check out se realiza cuando ha finalizado el total de los
+	días solicitados para el servicio de alojamiento por el cliente, en la sucursal del 	hotel donde se 	hospedó, se le indica el total del monto a cancelar por el servicio 	prestado teniendo en cuenta que si 	en caso de haber realizado una reservación se le 		debe descontar el 30% que abonó en el 	inicio y de no ser así cancelar el total a 	pagar.(Pago total)
+
+	 Registro calificaciones por parte de los clientes: el cliente podrá realizar la (calificaciones)
+	calificación correspondiente al hotel, sucursal, tipo de habitación y la calidad del
+	servicio recibido, además podrá dejar un comentario explicando el porqué de sus
+	calificaciones, con el fin de contar con las apreciaciones de los clientes, esta
+	calificación contará con un rango de 1 a 5.
+***********************************************************************************
+casos de uso UML
+* Asociasion: <<communicate>>
+* Inclusion incorpora el comportamiento de otra : principal ---------------->caso enriquesido <<Include>>
+* extención No son parte de flujo principal , pero sirven como parte opcionalñ es decir se ejecuta bajo ciertas condicciones <<Extend>>
+*************************************************************************************
+caso registro de ventas celulares
+"Comunicaciones empresariales": comprar equipos--- venta coorporativa 
+maneja 5 proveerdores  huwei,samsung,sondef,apple,lenovo (para la venta)
+maneja 2 proveedoreslenovo,howi para coorporativos
+
+software que facilite la venta e informa de inventario
+
+----------------------------------------------
+Funciones:+
+1) Registro de clientes: antes de realizar la venta (Verificar que no exista)  
+	Datos: nombre, apellido,cedula,dirrecion,tel,correo,fecha nacimiento
+
+2)verificar existencia del equipo: solicitar invetario que informe si hay o no un equipo
+
+3)registro del equipo celular: una vez registrado el cliente se procede a registrar el equipo
+	Datos: Marca,referencia,modelo,IMEI,numero producto
+
+4)Facturación del euipo: primordial hace uso de los casos anteriores 
+	 se debe: solicitar medio de pago: tarjeta credito o debito, efectivo
+	validar si tienen linea propia o comprar una.
+	demanera opcional registrar linea que desea comprar
+	Luego informar al de inventarios sobre la venta
+
+5)Venta de una linea: requiere que se registre el cliente 
+	Datos_: numero linea,IMEI, (No importa si se informa al de inventarios hacerca de esta venta)
+
+6)informar al inventario: consiste en enviar un correo con los datos de la venta
+
+7) generar factura: luego d ela venta s egenera factura con toso los detaklles del clinete , datos de la empresa 
+----------------------------------------------------------------------------------------------------------------
+paoso para el modelamiento 
+
+1...identifica los requisitos funcionales:7
+2....identificar a los actores del sistema: vendedores, encargados del invetario
+
+
+   <<Actor principal>>  ------------------------------------- -   <<Actor secundario>>
+	Vendedor	- venta de telefhonos celulares       -	 encargado de inventario
+                        - caso 1: Registro cliente	      -
+			- caso2: Verificar existencia de equipo				      
+			- caso 3: Registrar equipo	      -
+			- caso 4: Facturar telefono	      -
+			- caso 5: Vender elemnto <<abstract>> -(Funcion incompleta debe ser completada por factura telefono y factura sincard)
+			- caso 6: Informar al invetario       -
+			- caso 7: Generar factura             -
+			- caso 8: verificar existencia cliente-
+			- caso 9:Facturar simcard 	      -
+
+Reconocer las relaciones entre actores y funcionalidades
+
+vendedor----vender elementos (asociasion)--------vender telefono y vender sincar(especialización-- tienen funcionalidades encontradas)
+
+ventar elemmtos-----------registrar cliente (extend-- no hace parte del flujo principal)
+vender elemneto-----------verificar existencia (Include- incorpora el comportamiento de otra )
+
+factura telefono---- registro de equipo(include)---include informar al invetario---include too verificar existencia del equipo
+ facturar telefono y facturar sin card -----include con genmera factura
+***************************************************************************************************************
+MOdelo de dominio o modelo conceptual
+Diagrama que permita  detallar el comportamiento del sistema
+contienen los atributos requeridos no las funcionalidades
+
+Pasos para hacer el modelo de dominio
+
+1).Identificar clases candidatas(lugares, personas,algo descriptivo,elemntos intangibles)
+estraer los sustantivos: personas--lugares--cosas
+
+2). Dibujar las clases
+
+3). Identificación de relaciones
+		* Agregación=cuando la clase analizada  tiene partes usadas en otra clase ya existente(Objetos)
+		clase 1(tiene objetos de la clase 2) <------diamante en blanco-- clase 2
+		* Compocision=Una clase no puede existir sin la otra
+		clase 1(no puede existir sin la clase 2)<-------diamante pintado clase 2
+		*especializacion o generalización=para formar jerarquias de clases(Herencia)
+		una clase esta compuesta por multiples atriibutos y funcionalidades de la otra
+		clase A compuesta de la clase B (Aprendiz e instructor estan especializadas por persona)
+---------------------------------------------------------------------------------------------------Diagramas mas usados: caso de uso, actividades, secuencias, clases,grafico de estado
+ 
+
+

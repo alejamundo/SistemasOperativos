@@ -1,0 +1,23 @@
+Preguntas parcial:
+	*la arquitectura del sistema consiste
+	*vista fisica del sistema
+	*etapas del porceso de modelado de un sistema de arquitectura
+	*proceso de retiro de cajero diagrama casos de uso
+	*la ingenieria comprende
+	* elemnetos de un diagrama de casos de uso
+	*categorizar cada diagrama uml estructural o de comportamiento
+	*confiabilidad, rendimiento funcionalidad
+	*Estrategias de integracion en modulos de un programa
+	*errores en las pruebas de un calculo (que parte del ciclo de vida)
+	*estudiar diagrama d eclases
+	*modelo cuando no se logra identificar requisitos de entrada
+	*diagrama de secuencias-- consistente con el de clases
+	*herencia clases
+	*uml se utiliza para
+	*comportamiento de actores
+	*documentos quedebe presentar para requisitos funcionles
+	*termino arquitectura de software
+	*piezas se ajustan exactamnette= cohesion, acomplamiento, proxy fachada
+	*un cambio en el api obliga a
+	*una clase debe tener una sola funcionalidad
+	*refactorización

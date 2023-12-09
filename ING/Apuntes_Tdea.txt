@@ -1,0 +1,186 @@
+proposito ciclo de vida de software(SDLC): 
+	Entregar lo que el cliente quiere en el tiempo en el que
+	El cliente necesita (Entregar Valor).
+
+Enfoques de desarrollo
+	*Cascada--->Proceso secuencial 5
+		Desventajas:	*Cambios en las condiciones de mercado
+				*Nuevas tecnologias
+				*Cambios en los requerimentos del cliente
+		"Lo unico garantizado en el sw es el cambio"
+		Aplicabilidad:	*Proyectos pequeños
+				*Proyectos que se rigen por normativas (leyes de gobierno).
+	*Espiral--->SDM Conbinacion enfoque cascada e iterativo
+		Fases: 4 planeacion,Analisis de riesgos,Ingenieria,evaluación
+	*RUP---->Primer modelo interativo de sw
+	Era una base de conocimiento muy grande tenia:
+			*Artefactos
+			*Procesos
+			*Plantillas
+			*Fases
+			*Disciplinas
+			*Documentación extensiva
+			*personalizable
+	Tiene 4 faces:	
+		*Inicio: objetivos y alcance (objetivos importantes MIlestones)
+		*Elaboracion: Arquitectura del sistema
+		*Construcción: Culminar la funcionalidad del sistema
+		*Transicion:Depuración y entrega al usuario
+	Desventajas: 	*proceso demacado cargado de documentacion
+			*Era muy prescritivo demaciadas plantillas (dificil elegir la apropiada)	
+			
+
+Enfoques Modernos
+	*Ägil: Capacidad de crear y responder al cambio (en entornos inciertos y turbulentos)
+	Valores del manifiesto agil:
+		*Individuos e interraciones sobre procesos y herramientas
+		*Software funcionando sobre documentacion extensiva
+		*Colaboracion con el clientesobre negociacion contractual
+		*Respuesta ante el ca,nio antes de seguir plan
+	Principios del manifiesto agil:
+		*Entregas de valor
+		*Aprovechar el cambio para proporcionar venatajas competitivas
+		*software funcionando frecuentemente (periodos de tiempo cortos)
+		*Se trabaja juntos de forma cotidiana
+		*individuos motivados --entornos de apoyo
+		*Metodo eficiente de comunicar cara a cara
+		*Software funcionando medida principal de progreso
+		*atencion continua a la excelencia tecnica
+		*revisiones para efectuar cambios ajustar y perfeccionar
+
+Como miden las organizaciones el exito de la entrega agil de software
+	*valor entrega
+	*Satisfaccion cliente
+	*Velocidad 
+
+------------------------------------------------------------------
+Metodologia agil: serie de acuerdos que un equipo decide seguir(Propio de cada Empresa o equipo)
+	*Se encuentra definida y debe seguirse---> es Estricta
+Marco agil: enfoque estructurado y estandarizado acorde con los valores y principios  agiles es replicable
+	*Define la manera en la que vamos a trabajar (Representa una guia)Es laxo
+
+----->Algo muy prescritivo pierde adaptabilidad
+
+----------------------------------------------------------------
+Marco de trabajo SCrum: Es un marco ligero y ayuda a las personas y equipos a generar valor
+	Atravez de solucciones adaptables para problemas complejos
+Caracteristicas
+	*es simple
+	*Facil de entender dificil de dominar
+	*Incompleto
+	*Guian relaciones e interacciones
+	*Se basa en empirismo y pensamiento len
+	*Emplea un enfoque iterativo e incremental (controlar el riesgo)
+Pilares scrum: 	*Transparencia: trabajo visible para todos
+		*Inspeccion los artefactos y progreso se inspeccionan
+		*adaptación se asen ajustes
+Valores Scrum:	
+		*Compromiso: a cumplir objetivos
+		*Foco: en bloques de tiempo de trabajo iterativo para lograr el progerso
+		*franqueza: sobre el trabajo y los desafios
+		*respeto: para serg capaces e independientes
+		*coraje: de hacer lo correcto para trabajat en problemas dificiles
+Componentes:
+	*Scrum team: profesionales enfocadas en un objetivo a la vez(objetivo del producto)
+	Caracteristicas : 
+		*no hay sub equipos
+		*es multifuncional (crear valor en cada sprit)
+		*auto-organizado(quien que como)
+		*mientras mas pequeño el equipo mejor comunicacion y mas productividad
+		*Es responsable de todas las actividades
+		*Estan estructurados y empoderados
+		*trabajan en sprints a un ritmo sostenible
+		Lo componen: 	*Scrum Master
+				*product owner
+				*Developer
+Responsabilidad principal
+		*Crear incrementos valioso en cada sprint
+
+-----------------------------------------------------------------
+	Developer: encargados de crear el incremento utilizable en cada sprint
+
+responsabilidades: 	*crear un plan para el sprint(sprint backlog)
+			*Inculcar calidad a la definicion de terminado
+			*adaptar su plan cada dia hacia el objetivo del sprint
+			*responsabilizarse mutuamente
+------------------------------------------------------------------
+	product owner: persona encargada de maximizar el valor del producto que resulta del trabajo del scrum team
+
+responsabilidades: 	*Desarrollar y comunicar explicitamente el objetivo del producto
+			*crear y cominicar claramente los elemnetos del product backlog
+			*ordenar los elementos del product backlog
+			*Asegurar de que el product backlog sea transparente, visible y se entienda
+			*Es responsable de lo que se haga 
+			*para que tenga exto la organizacion respeta sus decisiones
+			*representa las necesidades de muchos
+			*Para cambiar algo en el producto backlog debe convencer al product owner
+-------------------------------------------------------------------
+	Scrum master: responsable de que el scrum se practique como se define en la gua scrum (scrum team efectivo) verdadero lider
+
+como sirve:
+		*guia a los miembros en como ser autogestionados(multifuncionales)
+		*ayuda enfocarse en incrementos de valor y que cumplan con la definicion de terminado
+		*Busca como eliminar cualquier impedimento
+		*se asegura de que los eventos sean positivos y productivos
+		*ayuda a encontrar tecnicas para definir el objetivo del producto yla gestion del product owner
+		*lidera capacita y guia
+		*planifica y asesora las implementaciones del scrum
+		*elimina barreras entre interesados y scrum teams
+
+----------------------------------------------------------------
+eventos Scrum: bloque de tiempos con duracion determinada(oportunidad para inspeccionar y adaptasr los artefactos)
+
+	Diseñados para habilitar la trasnparencia requerida
+
+Para que son los eventos: para crear regularidad y minimizar la necesidad de reuniones no definidas
+
+Se recomiendo que las reuniones se hagan al mismo tiempo y en el mismo lugar (reducir compllejidad)
+
+eventos: 	*Sprint----------(corazon del scrum)Duracion 1 mes o menos---comienza uno luego de que termina el actual
+		*Spirnt planning-(inicia el sprint se establece el trabajo scrum team plan)duracion maxima 8 horas para sprint de 1 mes (por que es valioso? que?como?)
+		*daily scrum	-Duracion evento diario 15 minutos para los developers el objetivo es inspeccionar el porgreso(lo ideal es que no participen scrum master ni product owner)
+		*Sprint review	-se presentan los resultados del trabajo a los interesados claves--determinar adaptaciones duracion maximo 4 horas para un espirnt de un mes
+		*Sprint retrospective-Se planifica como aumentar la calidad y efectividad duracion 3 horas para sprint de un mes
+
+-----------------------------------------------------------------
+	Aretfactos del marco scrum
+Son los elementos creados por el quipo durante el desarrollo del producto
+	*diseñados para maximizar la transparencia de la informacion clave
+	*cada artefacto tiene un compormiso frente al cual se mide el progreso
+
+Artefactos compromisos
+	*Prouct backlog: objetivo del producto:objetivo a largo plazo 
+		Lista emergente y ordenada de lo que se necesita para mejorar e producto (unica fuente de trabajo )
+		
+
+	*Spint backlog: objetivo del sprint: (por que? que? como?) esto crea coherencia y enfoque
+		Toma un elemneto del producto backlog y lo desgloza en pequeñas partes
+		
+	*Increment: definicion de terminado:es un peldaño concreto hacia el objetivo del producto(cada incremento se suma a incrementos anteriores)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>><>>>>>>
+
+Kanban: No es un marco ni metodología es un método de gestion del trabajo existente
+    (en el se puede aplicar otro marco)
+    
+    Que hace? medio para mejorar el que? y el como? de lo que se esta haciendo
+    
+    Principios de kanban
+            *Gestion de cambio
+                *Comenzar con lo que haces ahora
+                *Acordar la busqueda de mejora atravez del cambio evolutivo
+                *Fomentar actos de liderazgo a todos los niveles
+            *Entrega del servicio
+                *Comprender y enfocarse en la entrega que satisfaga necesidades
+                *Gestionar el trabajo: trabajadores auto organicen
+                *Revisar la red de servicios y politicas para mejorar resultados entregados
+                
+    Practicas generales de kanban
+        Se puede aplicar en muchos formas y diferentes niveles de profundidad
+        6 practicas generales de cambas
+            *Visualizar: clave para tener colaboración eficaz para identificar oportunidades de mejora
+            *Limitar el trabajo en curso (wip): Numero de elementos de trabajo en un tiempo determinado, este debe limitarse
+
+
+
+
+
